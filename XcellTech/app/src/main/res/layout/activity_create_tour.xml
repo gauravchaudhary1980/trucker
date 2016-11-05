@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal|top"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backGround"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.letsgo.letsgo.CreateTour">
+
+    <LinearLayout android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal|top">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/abc_action_bar_default_height"
+            android:background="@color/titleBar"
+            android:singleLine="true"
+            android:text="@string/title_tour"
+            android:textColor="@color/titleText"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/tourTextView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:id="@+id/userNametextView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd:MMM:yyyy hh:mm:ss"
+            android:id="@+id/timeStamptextView"
+            android:textColor="@color/textBox"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectedcustomerTextView"
+                android:prompt="@string/prompt_customer_name"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_name"
+                android:spinnerMode="dialog"
+                android:prompt="@string/prompt_customer_name">
+            </Spinner>
+        </LinearLayout>
+
+        <AutoCompleteTextView android:id="@+id/vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_vehicle_number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+        <AutoCompleteTextView android:id="@+id/pan_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_pan_number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+        <AutoCompleteTextView android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_quantity"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+        <AutoCompleteTextView android:id="@+id/drive_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_drive_number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+        <AutoCompleteTextView android:id="@+id/gr_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_gr_number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+        <AutoCompleteTextView android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_note"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBox"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/time_in_button"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/success"
+            android:onClick="onControlClicked"/>
+    </LinearLayout>
+</LinearLayout>

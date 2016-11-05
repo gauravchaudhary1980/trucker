@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_registration"
+        android:title="Registeration"
+        android:icon="@drawable/registration"/>
+    <item android:id="@+id/menu_history"
+        android:title="History"
+        android:icon="@drawable/history" />
+    <item android:id="@+id/menu_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/reload"/>
+    <item android:id="@+id/menu_shutdown"
+        android:title="Exit"
+        android:icon="@drawable/reload"/>
+</menu>

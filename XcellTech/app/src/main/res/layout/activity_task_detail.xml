@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backGround"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.letsgo.letsgo.Login">
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal|top">
+        <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/abc_action_bar_default_height"
+                        android:background="@color/titleBar"
+                        android:singleLine="true"
+                        android:text="@string/title_on_going_details"
+                        android:textColor="@color/titleText"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:id="@+id/tourTextView" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[details]"
+                        android:id="@+id/TaskDetailTextView"
+                        android:autoLink="web"
+                        android:textColor="@color/textBox"
+
+                        android:inputType="textMultiLine"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello!"
+                        android:id="@+id/userNametextView"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="dd:MMM:yyyy hh:mm:ss"
+                        android:id="@+id/timeStamptextView"
+                        android:textColor="@color/textBox"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+                    <Button android:id="@+id/resume_button"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/action_resume"
+                        android:textStyle="bold"
+                        android:textColor="@color/titleText"
+                        android:background="@color/accent_material_light"
+                        android:onClick="onControlClicked"/>
+                    <Button android:id="@+id/complete_button"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/action_complete"
+                        android:textStyle="bold"
+                        android:textColor="@color/titleText"
+                        android:background="@color/design_textinput_error_color_light"
+                        android:onClick="onControlClicked" />
+                    <Button android:id="@+id/cancle_button"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/action_cancle"
+                        android:textStyle="bold"
+                        android:textColor="@color/titleText"
+                        android:background="@android:color/holo_orange_dark"
+                        android:onClick="onControlClicked"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

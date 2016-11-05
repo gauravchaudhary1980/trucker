@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/titleBar</item>
+        <item name="android:textColorSecondary">@color/titleBar</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/titleBar</item>
+        <item name="android:textColor">@color/titleText</item>
+    </style>
+
+    <style name="title">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="message">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">#0086F2</item>
+        <item name="android:divider">#444444</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:background">#0086F2</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#0086F2</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#0086F2</item>
+    </style>
+
+
+</resources>
